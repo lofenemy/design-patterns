@@ -8,4 +8,5 @@ class Singleton {
   }
 }
 
+//
 // use static value of class to save instance. We can also use external variable.`
