@@ -12,24 +12,27 @@ const homeTypes = {
     roof: "Top",
     door: "the Best",
     window: "Normal",
+    floor: "ok",
   },
   poor: {
     roof: "bad",
     door: "the wors",
     window: "bad",
+    floor: "ok",
   },
   typical: {
-    roof: "ok",
+    roof: "ok",``
     door: "ok",
+    floor: "ok",
     window: "ok",
   },
 };
 
 class FactoryHome {
-  constructor(homeType) {
-    const { roof, door, window } = homeTypes[homeType];
+  static build(homeType) {
+    const { roof, door, window, floor } = homeTypes[homeType];
 
-    return new Home(roof, door, window);
+    return new Home(roof, floor, door, window);
   }
 }
 
